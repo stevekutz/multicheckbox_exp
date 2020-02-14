@@ -14,9 +14,12 @@ const style = {
 
 }
 
+// const options = [{label: 'First Item'}, {label: 'Second Item'}];
 
 function MultiCheck({options, onChange}) {
     const [data, setData] = React.useState(options);
+
+
 
     const toggle = item => {
         data.map((_, key) => {
@@ -32,7 +35,7 @@ function MultiCheck({options, onChange}) {
         <ul style = {style.listContainer}>
             {data.map(item => {
                 return (
-                    <li key = {item.label} style = {style.itemStyle} onClick = {()=> toggle()}>
+                    <li key = {item.label} style = {style.itemStyle} onClick = {()=> toggle(item)}>
                         <input  readOnly type = 'checkbox' checked = {item.checked || false }/>
                         {item.label}
                     </li>         
