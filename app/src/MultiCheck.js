@@ -22,11 +22,10 @@ function MultiCheck({options, onChange}) {
         data.map((_, key) => {
             if(data[key].label === item.label) data[key].checked = !item.checked;
         });
-
+        setData([...data]);
+        onChange(data);
     }
 
-    setData([...data]);
-    onChange(data);
 
 
     return (
