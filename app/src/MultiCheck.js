@@ -29,6 +29,18 @@ function MultiCheck({options, onChange}) {
     onChange(data);
 
 
+    return (
+        <ul style = {style.listContainer}>
+            {data.map(item => {
+                return (
+                    <li key = {item.label} style = {style.itemStyle} onClick = {()=> toggle()}>
+                        <input  readOnly type = 'checkbox' checked = {item.checked || false }/>
+                        {item.label}
+                    </li>         
+                );                
+            })}       
+        </ul>
+    )
 
 };
 
