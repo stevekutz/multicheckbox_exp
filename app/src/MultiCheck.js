@@ -1,4 +1,6 @@
 import React from 'react';
+import {useState} from 'reinspect';
+
 
 const style = {
     listContainer: {
@@ -17,8 +19,8 @@ const style = {
 // const options = [{label: 'First Item'}, {label: 'Second Item'}];
 
 function MultiCheck({options, onChange}) {
-    const [data, setData] = React.useState(options);
-
+    // const [data, setData] = React.useState(options, 'data state');
+    const [data, setData] = useState(options, "Options State");
 
 
     const toggle = item => {
