@@ -1,6 +1,6 @@
 import React from 'react';
 import {useState} from 'reinspect';
-
+import {Input, List} from 'semantic-ui-react';
 
 const style = {
     listContainer: {
@@ -38,7 +38,7 @@ function MultiCheck({options, onChange}) {
             {data.map(item => {
                 return (
                     <li key = {item.label} style = {style.itemStyle} onClick = {()=> toggle(item)}>
-                        <input  readOnly type = 'checkbox' checked = {item.checked || false }/>
+                        <Input  readOnly type = 'checkbox' checked = {item.checked || false }/>
                         {item.label}
                     </li>         
                 );                
