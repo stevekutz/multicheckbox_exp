@@ -1,14 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 import MultiCheck from './MultiCheck';
+import CheckBoxSemanticUI from './CheckBoxSemanticUI'
 
 const options = [{label: 'First Item'}, {label: 'Second Item'}];
 
 function App() {
   return (
-    <div className="App">
+    <div>
         <MultiCheck 
              options = {options}
              onChange = {data => {
@@ -16,6 +17,8 @@ function App() {
              }}
         
         />
+        <CheckBoxSemanticUI />      
+
     </div>
   );
 }

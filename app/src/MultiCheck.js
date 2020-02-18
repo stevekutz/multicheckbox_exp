@@ -25,6 +25,7 @@ function MultiCheck({options, onChange}) {
 
     const toggle = item => {
         data.map((_, key) => {
+            console.log('_ is ', _);
             if(data[key].label === item.label) data[key].checked = !item.checked;
         });
         setData([...data]);
