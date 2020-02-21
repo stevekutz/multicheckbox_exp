@@ -3,10 +3,12 @@ import React from 'react';
 import './App.css';
 
 // verify update
+// verify yarn & node
 
 
 import MultiCheck from './MultiCheck';
-import CheckBoxSemanticUI from './CheckBoxSemanticUI'
+import CheckBoxSemanticUI from './CheckBoxSemanticUI';
+import Semantic_checkbox2 from './Semantic_checkbox2';
 
 const options = [{label: 'First Item'}, {label: 'Second Item'}];
 
@@ -20,7 +22,8 @@ function App() {
              }}
         
         />
-        <CheckBoxSemanticUI />      
+        <CheckBoxSemanticUI /> 
+        <Semantic_checkbox2/>   
 
     </div>
   );
