@@ -10,8 +10,13 @@ const SemanticCheckBoxHooks = () => {
 
     return (
         <div>
-        <input type="checkbox" id="scales" name="scales" checked = {checkedState}/>
-        <label for="scales">Scales</label>
+        <input 
+            type="checkbox" 
+            id="genericCheckbox" name="scales" 
+            checked = {checkedState}
+            onChange = {toggleChecked}
+            />
+        <label for="genericCheckbox">Generic CheckBox</label>
         
         
         </div>
