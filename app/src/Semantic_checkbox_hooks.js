@@ -10,6 +10,7 @@ const SemanticCheckBoxHooks = () => {
 
     return (
         <div>
+        <button onClick = {toggleChecked}> This also toggles </button>
         <input 
             type="checkbox" 
             id="genericCheckbox" name="scales" 
