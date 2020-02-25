@@ -7,7 +7,7 @@ const options = [
     { value: 'checkboxThree', label: 'Checkbox Three', disabled: false },
 ];
 
-class CheckboxGroupTry extends React.Component {
+class RainbowCheckbox extends React.Component {
     constructor(props) {
         super(props);
         this.state = { values: [] };
@@ -34,4 +34,4 @@ class CheckboxGroupTry extends React.Component {
     }
 }
 
-export default CheckboxGroupTry;
+export default RainbowCheckbox;

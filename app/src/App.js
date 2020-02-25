@@ -10,6 +10,7 @@ import MultiCheck from './MultiCheck';
 import CheckBoxSemanticUI from './CheckBoxSemanticUI';
 import Semantic_checkbox2 from './Semantic_checkbox2';
 import SemanticCheckBoxHooks from './Semantic_checkbox_hooks';
+import RainbowCheckbox from './RainbowCheckbox';
 
 const options = [{label: 'First Item'}, {label: 'Second Item'}];
 
@@ -26,6 +27,7 @@ function App() {
         <CheckBoxSemanticUI /> 
         <Semantic_checkbox2/>  
         <SemanticCheckBoxHooks/> 
+        <RainbowCheckbox />
 
     </div>
   );
