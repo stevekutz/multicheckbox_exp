@@ -17,7 +17,7 @@ const SemanticCheckBoxHooks = () => {
             checked = {checkedState}
             onChange = {toggleChecked}
             />
-        <label for="genericCheckbox">Generic CheckBox</label>
+        <label htmlFor="genericCheckbox">Generic CheckBox</label>
         
         
         </div>
