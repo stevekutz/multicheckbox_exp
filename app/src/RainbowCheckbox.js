@@ -8,8 +8,9 @@ const options = [
 ];
 
 class RainbowCheckbox extends React.Component {
-    constructor(props) {
-        super(props);
+    // removed props
+    constructor() {
+        super();
         this.state = { values: [] };
         this.handleOnChange = this.handleOnChange.bind(this);
     }
@@ -24,7 +25,7 @@ class RainbowCheckbox extends React.Component {
         return (
             <div className="rainbow-p-vertical_large rainbow-p-left_xx-large">
                 <CheckboxGroup
-                    id="checkbox-group-1"
+                    id="checkbox-group-"
                     label="Checkbox Group Label"
                     options={options}
                     value={values}

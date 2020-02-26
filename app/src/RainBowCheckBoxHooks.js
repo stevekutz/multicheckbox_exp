@@ -1,10 +1,11 @@
 import React, {Components} from 'react';
 import {Card, Button, CheckboxGroup} from 'react-rainbow-components';
+import {useState} from 'reinspect';
 
 const options = [
-    { value: 'checkboxOne', label: 'Checkbox One', disabled: false },
-    { value: 'checkboxTwo', label: 'Checkbox Two', disabled: false },
-    { value: 'checkboxThree', label: 'Checkbox Three', disabled: false },
+    { value: 'checkboxOne', label: 'Hooks Checkbox One', disabled: false },
+    { value: 'checkboxTwo', label: 'Hooks Checkbox Two', disabled: false },
+    { value: 'checkboxThree', label: 'Hooks Checkbox Three', disabled: false },
 ];
 
 const RainbowCheckboxHooks = () => {
@@ -15,20 +16,20 @@ const RainbowCheckboxHooks = () => {
     // }
 
     const [checkState, setCheckState] = useState(true, "RHooks State");
-    const [values, setValue] = useState([], "values state");
+    const [hvalues, setValue] = useState([], "RHvalues state");
 
-    const handleOnChange = (values) => {
-        setCheckState({ values });
-        console.log('$$$$$ ', values);
+    const handleOnChange = (hvalues) => {
+        setValue({ hvalues });
+        console.log('Hooks$$$$$ ', hvalues);
     }
 
         return (
             <div className="rainbow-p-vertical_large rainbow-p-left_xx-large">
                 <CheckboxGroup
-                    id="checkbox-group-1"
-                    label="Checkbox Group Label"
+                    id="checkbox-group-2"
+                    label="Checkbox HGroup Label"
                     options={options}
-                    value={values}
+                    value={hvalues}
                     onChange={handleOnChange} />
             </div>
         );
