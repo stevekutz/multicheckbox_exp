@@ -12,6 +12,7 @@ import Semantic_checkbox2 from './Semantic_checkbox2';
 import SemanticCheckBoxHooks from './Semantic_checkbox_hooks';
 import RainbowCheckbox from './RainbowCheckbox';
 import RainbowCheckboxHooks from './RainBowCheckBoxHooks';
+import SemanticRadioHooks from './SemanticRadioHooks';
 
 const options = [{label: 'First Item'}, {label: 'Second Item'}];
 
@@ -30,6 +31,7 @@ function App() {
         <SemanticCheckBoxHooks/> 
         <RainbowCheckbox />
         <RainbowCheckboxHooks />
+        <SemanticRadioHooks />
 
     </div>
   );
