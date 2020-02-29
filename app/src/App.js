@@ -13,6 +13,7 @@ import SemanticCheckBoxHooks from './Semantic_checkbox_hooks';
 import RainbowCheckbox from './RainbowCheckbox';
 import RainbowCheckboxHooks from './RainBowCheckBoxHooks';
 import SemanticRadioHooks from './SemanticRadioHooks';
+import TextAreaComp from './TextAreaComp';
 
 const options = [{label: 'First Item'}, {label: 'Second Item'}];
 
@@ -32,7 +33,7 @@ function App() {
         <RainbowCheckbox />
         <RainbowCheckboxHooks />
         <SemanticRadioHooks />
-
+        <TextAreaComp placeholder='Insert some text here...' callback={(val) => console.log(val)}/>     
     </div>
   );
 }
